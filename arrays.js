@@ -13,7 +13,8 @@ function destructivelyAddElementToBeginningOfArray(arrayName, newElement){
 }
 
 function addElementToEndOfArray(arrayName, newElement){
-  var newEndArray = arrayName;
+  var newEndArray = [];
+  newEndArray = arrayName.slice(0);
   newEndArray.push(newElement);
   return newEndArray;
 }
@@ -33,7 +34,8 @@ function destructivelyRemoveElementFromBeginningOfArray(arrayName){
 }
 
 function removeElementFromBeginningOfArray(arrayName){
-  var newArrayMinusFirst = arrayName;
+  var newArrayMinusFirst = [];
+  newArrayMinusFirst = arrayName.slice(0);
   newArrayMinusFirst.shift();
   return newArrayMinusFirst;
 }
